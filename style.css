@@ -4,22 +4,31 @@
     box-sizing: border-box;
     font-family:sans-serif;
 }
-.container{
+body{
+
     position:relative;
 }
-.container > div{
+.container{
+    width:1100px;
+    margin:auto;
+
+}
+/* .container > div{
     padding-left:50px;
     padding-right:50px;
-}
+} */
 /* header.............................................. */
 .header {
     background-color: #37517e;
+    position:sticky;
+    padding:30px 0;
+    top:0;
+}
+.header .container{
     display:flex;
     justify-content:space-between;
     align-items: center;
-    padding:30px 0;
-    position:sticky;
-    top:0;
+
 }
 .header h2{
     font-size: 30px;
@@ -50,6 +59,10 @@
     background-color: #37517e;
     padding:50px 0;
     display:flex;
+}
+.first-section .container{
+    display:flex;
+
 }
 .first-section .left-bar h1{
     font-size: 40px;
@@ -118,7 +131,7 @@
 }
 /* second............................................................... */
 
-.second-section > div{
+.second-section .container .content{
     display:flex;
     padding:80px 0 50px;
 }
@@ -132,7 +145,7 @@
     color:#37517e;
     font-weight: 800;
     position:relative;
-    padding:20px 0;
+    padding-bottom:20px;
 }
 .second-section h2:before{
     content:"";
@@ -211,9 +224,9 @@
 .third-section{
     background-color: #f5f6f8;
 }
-.third-section > div{
+.third-section .container{
     display:flex;
-    margin:30px 0;
+    /* margin:30px 0; */
     padding:40px 0;
 }
 .third-section .left{
@@ -263,9 +276,10 @@
 }
 /* forth......................................................... */
 
-.forth-section >div{
+.forth-section .container{
     display: flex;
-    margin:50px 0 ;
+    padding:70px;
+    /* margin:50px 0 ; */
 }
 .forth-section .left{
     width:50%;
@@ -374,13 +388,15 @@
 /* fifth.......................................................... */
 
 .fifth-section {
-    margin-top:100px ;
+    /* margin-top:100px ; */
     background-color: #f5f6f8;
     padding:30px 0;
 }
-.fifth-section .main{
-    display:flex;
+.fifth-section .container .text{
+text-align: center;
+color:rgb(100, 99, 99);
 }
+
 .fifth-section h2{
     font-size:30px;
     font-weight: 800;
@@ -415,15 +431,12 @@
    margin:auto;
    background-color: #2fa6dd;
 }
-.fifth-section >div:nth-of-type(1){
-    text-align: center;
-    margin:30px 0;
-    color:rgb(94, 92, 92);
-}
+
 .fifth-section .main{
-    padding:40px 0;
+    padding:70px 0;
     display:flex;
     justify-content:space-between;
+    color:rgb(100, 99, 99);
 }
 
 .fifth-section .main .mini-mains{
@@ -461,7 +474,7 @@
     background-size: cover;
     background-attachment: fixed;
 }
-.sixth-section div:only-child{
+.sixth-section .container{
  display:flex;
  height:100%;
  align-items:center;
@@ -535,14 +548,14 @@
 .seventh-section ul{
     list-style:none;
     display:flex;
-    width:300px;
-    margin:25px auto;
+    width:270px;
+    margin:30px auto;
     justify-content:space-between;
 }
 .seventh-section ul li a{
     text-decoration:none;
     color:black;
-    font-size: 16px;
+    font-size: 14px;
     
 }
 .seventh-section ul li a.first{
@@ -585,7 +598,7 @@
 .eighth-section{
     padding-bottom:50px ;
 }
-.eighth-section >div {
+.eighth-section .container {
 display: flex;
 flex-direction: column;
 row-gap: 20px;
@@ -594,10 +607,13 @@ row-gap: 20px;
     text-align: center;
     color:#37517e;
     font-size: 35px;
-    margin:20px 0;
+    /* margin:20px 0; */
     position:relative;
     padding:20px 0;
     font-weight: 800;
+}
+.eighth-section .container>div{
+    margin:20px 0;
 }
 .eighth-section h2:before{
     content:"";
@@ -626,7 +642,8 @@ row-gap: 20px;
 }
 .eighth-section p{
     text-align: center;
-    margin:60px 0;
+    /* margin:60px 0; */
+    color:rgb(87, 85, 85);
 }
 .eighth-section i{
     color:gray;
@@ -706,7 +723,7 @@ row-gap: 20px;
 .ninth-section h2{
     text-align:center;
     color:#37517e;
-    margin:20px 0;
+    /* margin:20px 0; */
     position:relative;
     padding:20px 0;
     font-size: 30px;
@@ -740,20 +757,23 @@ row-gap: 20px;
 .ninth-section p{
     text-align:center;
     margin-top:40px;
+    font-size: 17px;
+    font-weight: 100;
     color:rgb(102, 101, 101);
 }
 .ninth-section .box{
     width:350px ;
     padding:60px 40px;
-    box-shadow: 0 0 25px 0 lightblue;
+    box-shadow: 0 0 25px 0 rgb(195, 229, 240);
     border-radius: 7px;
+    background-color:white;
 }
 .ninth-section .box ul li{
     list-style: none;
     display: flex;
     align-items: center;
 }
-.ninth-section div:first-child{
+.ninth-section .container{
     color:#37517e;
     font-size: 20px;
     font-weight: bold;
@@ -812,7 +832,7 @@ row-gap: 20px;
 }
 .price-item{
     display: flex;
-    padding-top:100px;
+    padding-top:55px;
     justify-content:space-between;
 }
 .border-item{
@@ -820,14 +840,14 @@ row-gap: 20px;
 }
 /* tenth............................................................. */
 
-.tenth-section{
-    width:900px;
+.tenth-section .container{
+    /* width:900px; */
     text-align: center;
     padding:50px 0;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 .tenth-section h2{
-    margin:50px 0;
+    /* margin:50px 0; */
     color:#37517e;
     font-size: 30px;
     font-weight: 800;
@@ -860,6 +880,7 @@ row-gap: 20px;
    background-color: #2fa6dd;
 }
 .tenth-section p{
+    margin:20px;
     line-height: 2;
     color:gray;
     font-size: 17px;
@@ -867,6 +888,10 @@ row-gap: 20px;
 .tenth-section p:nth-of-type(2){
     font-style: italic;
     margin-bottom:30px;
+    width:850px;
+    margin: auto;
+    margin-bottom: 20px;
+    /* text-align: center; */
 }
 .tenth-section p:nth-of-type(2) i{
     color:#97d4f0;
@@ -888,10 +913,12 @@ row-gap: 20px;
 .tenth-section .main-item{
     display: flex;
     flex-direction: column;
+    /* align-items: center; */
     width:200px;
     align-items: center;
     row-gap: 10px;
-    margin:60px auto 10px;
+    margin: 30px auto;
+    /* margin:60px auto 10px; */
 }
 .tenth-section .main-item span{
     font-size: 14px;
@@ -1121,9 +1148,9 @@ row-gap: 20px;
     margin-top:70px ;
     background-color:#f5f6f8;
 }
-.section-13 .box{
+.section-13 .container{
     width:600px;
-    margin:auto;
+    /* margin:auto; */
 }
 .section-13 h4{
     color:#37517e;
